@@ -1,0 +1,4 @@
+#Sat Nov 02 02:22:55 IST 2019
+base.0=/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

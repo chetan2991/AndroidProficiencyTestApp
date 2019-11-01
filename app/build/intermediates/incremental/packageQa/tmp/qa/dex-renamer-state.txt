@@ -1,0 +1,4 @@
+#Sat Nov 02 02:29:32 IST 2019
+base.0=/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/transforms/r8/qa/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

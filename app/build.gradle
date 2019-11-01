@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+//A gradle plugin to calculate Android-friendly version names and codes from git tags.
+apply plugin : 'com.gladed.androidgitversion'
+
+androidGitVersion {
+    codeFormat = "MNNPPBBB"
+    format = "%tag%%.count%%-commit%%-dirty%"
+}
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+    defaultConfig {
+        applicationId versions.applicationId
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode androidGitVersion.code()
+        versionName androidGitVersion.name()
+        resConfigs("en")
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        qa {
+
+            initWith debug
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            applicationIdSuffix ".qa"
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        debug{
+            debuggable true
+            applicationIdSuffix ".debug"
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    implementation(deps.kotlin.kotlinstdlib)
+
+
+    //dagger
+    implementation(deps.dagger.daggerRuntime)
+    implementation(deps.dagger.daggerAndroidRuntime)
+    kapt(deps.dagger.daggerProcessor)
+    kapt(deps.dagger.daggerCompiler)
+
+
+    //ui
+    implementation(deps.ui.appcompact)
+    implementation(deps.ui.fragment)
+    implementation(deps.ui.navigation)
+
+}
