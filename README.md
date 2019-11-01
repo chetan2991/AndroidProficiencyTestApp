@@ -1,2 +1,2 @@
 
-# AndroidProficiencyTestApp
+# AndroidProficiencyTestApplication
