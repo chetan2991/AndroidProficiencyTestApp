@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.chetan.assignments.debug";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 2;
-  public static final String VERSION_NAME = "untagged.2-ba04153-dirty";
+  public static final int VERSION_CODE = 3;
+  public static final String VERSION_NAME = "untagged.3-fb57b4f-dirty";
 }

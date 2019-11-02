@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chetan.assignments.debug"
     android:targetSandboxVersion="2"
-    android:versionCode="2"
-    android:versionName="untagged.2-ba04153-dirty" >
+    android:versionCode="3"
+    android:versionName="untagged.3-fb57b4f-dirty" >
 
     <uses-sdk
         android:minSdkVersion="14"

@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 //A gradle plugin to calculate Android-friendly version names and codes from git tags.
-apply plugin : 'com.gladed.androidgitversion'
+apply plugin: 'com.gladed.androidgitversion'
 
 androidGitVersion {
     codeFormat = "MNNPPBBB"
@@ -31,7 +31,6 @@ android {
         release {
             minifyEnabled true
             debuggable false
-            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         qa {
@@ -39,11 +38,10 @@ android {
             initWith debug
             debuggable false
             minifyEnabled true
-            shrinkResources true
             applicationIdSuffix ".qa"
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-        debug{
+        debug {
             debuggable true
             applicationIdSuffix ".debug"
         }
@@ -51,6 +49,9 @@ android {
     dataBinding {
         enabled = true
     }
+
+
+
 }
 
 dependencies {
@@ -69,5 +70,9 @@ dependencies {
     implementation(deps.ui.appcompact)
     implementation(deps.ui.fragment)
     implementation(deps.ui.navigation)
+
+    implementation project(':splash:ui')
+    implementation project(':core')
+
 
 }

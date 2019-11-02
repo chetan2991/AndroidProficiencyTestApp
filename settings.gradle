@@ -1,2 +1,5 @@
 include ':app'
+include ':splash:ui'
+include ':core'
+
 rootProject.name='AndroidProficiencyExercise'

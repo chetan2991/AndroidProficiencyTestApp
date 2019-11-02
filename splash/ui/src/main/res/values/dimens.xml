@@ -4,4 +4,8 @@
     <dimen name="tag_line_bg_corner_radius">16dp</dimen>
     <dimen name="tag_line_bg_lr_padding">16dp</dimen>
     <dimen name="tag_line_bg_bottom_padding">1dp</dimen>
+
+    //move to base
+    <dimen name="text_seventy_nine">79sp</dimen>
+
 </resources>

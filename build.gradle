@@ -1,67 +1,125 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext.kotlin_version = '1.3.50'
 
 
     ext.versions = [
 
             //android config
-            'compileSdkVersion': 29,
-            'minSdkVersion'    : 14,
-            'targetSdkVersion' : 29,
-            'buildToolsVersion': "29.0.1",
-            'versionCode'      : 1,
-            'versionName'      : "1.0",
-            'applicationId'    : "com.chetan.assignments",
+            'compileSdkVersion'  : 29,
+            'minSdkVersion'      : 14,
+            'targetSdkVersion'   : 29,
+            'buildToolsVersion'  : "29.0.1",
+            'versionCode'        : 1,
+            'versionName'        : "1.0",
+            'applicationId'      : "com.chetan.assignments",
 
             //ui
-            'fragment'         : "1.1.0-rc03",
-            'navigation'       : "2.1.0-beta02",
-            'supportLibVersion': '1.0.0',
+            'fragment'           : "1.1.0-rc03",
+            'navigation'         : "2.1.0-beta02",
+            'supportLibVersion'  : '1.0.0',
 
 
             //kotlin
-            'kotlin_version'   : '1.3.50',
-            'kotlin_core'      : '1.1.0',
-            'kotlin_gradle'    : '1.3.50',
+            'kotlin_version'     : '1.3.50',
+            'kotlin_core'        : '1.1.0',
+            'kotlin_gradle'      : '1.3.50',
 
 
-            'dagger'           : '2.24',
+            'dagger'             : '2.24',
 
 
-            'androidPlugin'    : '3.5.1',
+            'androidPlugin'      : '3.5.1',
 
-            'agv' : '0.4.9'
+            'agv'                : '0.4.9',
 
+            'androidxArchVersion': '2.2.0-alpha02',
 
+            'coroutines'         : '1.3.0-M1',
+
+            //testing
+            'mockitoKotlin'      : "2.1.0",
+            'junit'              : "4.12",
+            'junitAndroid'       : "1.1.1",
+            'arch'               : '2.0.0'
 
 
     ]
     ext.deps = [
 
-            kotlin : [
+            kotlin                        : [
                     'kotlinstdlib': "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin_version}",
                     'gradlePlugin': "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin_gradle}",
             ],
-            android: [
+            plugins                       : [
+                    'detekt': "io.gitlab.arturbosch.detekt"
+
+            ],
+            android                       : [
                     'gradlePlugin': "com.android.tools.build:gradle:${versions.androidPlugin}"
             ],
-            gladed :[
-                    'androidgitversion' : "com.gladed.androidgitversion:gradle-android-git-version:${versions.agv}"
+            gladed                        : [
+                    'androidgitversion': "com.gladed.androidgitversion:gradle-android-git-version:${versions.agv}"
             ],
 
-            dagger : [
+            dagger                        : [
                     'daggerRuntime'       : "com.google.dagger:dagger:${versions.dagger}",
                     'daggerAndroidRuntime': "com.google.dagger:dagger-android-support:${versions.dagger}",
                     'daggerCompiler'      : "com.google.dagger:dagger-compiler:${versions.dagger}",
                     'daggerProcessor'     : "com.google.dagger:dagger-android-processor:${versions.dagger}"
             ],
 
-            ui     : [
+            ui                            : [
                     'appcompact': "androidx.appcompat:appcompat:${versions.supportLibVersion}",
                     'fragment'  : "androidx.fragment:fragment-ktx:${versions.fragment}",
                     'navigation': "androidx.navigation:navigation-fragment-ktx:${versions.navigation}"
             ],
+            lifeCycleArchitectureComponent: [
+                    'lifecycleExtension'   : "androidx.lifecycle:lifecycle-extensions:${versions.androidxArchVersion}",
+                    'lifecycleRuntime'     : "androidx.lifecycle:lifecycle-runtime:${versions.androidxArchVersion}",
+                    'lifecycleCompiler'    : "androidx.lifecycle:lifecycle-compiler:${versions.androidxArchVersion}",
+                    'lifecycleViewModelKtx': "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.androidxArchVersion}",
+                    'livedataKtx'          : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.androidxArchVersion}",
+
+            ],
+            coroutine                     : [
+                    'coroutineCore'   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}",
+                    'coroutineAndroid': "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}",
+                    'coroutineAdapter': "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${versions.coroutineAdapter}"
+            ],
+
+
+
+            androidTest                   : [
+//                    'espressoCore'         : "androidx.test.espresso:espresso-core:${versions.espressoCore}",
+//                    'testRunner'           : "androidx.test:runner:${versions.espressoRunner}",
+//                    'testRules'            : "androidx.test:rules:${versions.testRules}",
+//                    'annotation'           : "androidx.annotation:annotation:${versions.androidTestAnnotation}",
+                        'archCore': "androidx.arch.core:core-testing:${versions.arch}",
+//                    'cucumberAndroid'      : "info.cukes:cucumber-android:${versions.cucumberAndroid}",
+//                    'cucumberPicoContainer': "info.cukes:cucumber-picocontainer:${versions.cucumberPicoContainer}",
+//                    'cucumberJvmDeps'      : "info.cukes:cucumber-jvm-deps:${versions.cucumberJvmDeps}",
+//                    'cucumberJavaDeps'     : "info.cukes:cucumber-java:${versions.cucumberJava}",
+            ],
+
+            test                          : [
+                    'junit'       : "junit:junit:${versions.junit}",
+                    'junitAndroid': "androidx.test.ext:junit:${versions.junitAndroid}",
+//                    'robolectric'  : "org.robolectric:robolectric:${versions.robolectric}",
+//                    'core'         : "androidx.test:core:${versions.testCore}",
+//                    'mockWebServer': "com.squareup.okhttp3:mockwebserver:${versions.okhttp}",
+                    'mockito'     : "com.nhaarman.mockitokotlin2:mockito-kotlin:${versions.mockitoKotlin}",
+//                    'mockitoInline' : "org.mockito:mockito-inline:${versions.mockito}",
+//                    'mockitoAndroid' : "org.mockito:mockito-android:${versions.mockito}",
+//                    'coroutineTest' : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutines}"
+
+//                    mokito                        : [
+//                    const val mockitoInline = "org.mockito:mockito-inline:${versions.mockito}"
+//                    const val mockitoAndroid = "org.mockito:mockito-android:${versions.mockito}"
+//                    ]
+            ]
+
 
     ]
     repositories {
@@ -77,6 +135,7 @@ buildscript {
         classpath deps.android.gradlePlugin
         classpath deps.kotlin.gradlePlugin
         classpath deps.gladed.androidgitversion
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
