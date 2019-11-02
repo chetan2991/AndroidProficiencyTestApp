@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.AppLogo.Splash">
+        <item name="android:textSize">@dimen/text_seventy_nine</item>
+        <item name="android:textColor">@color/app_name_color</item>
+    </style>
+
+    <style name="Widget.App.TagLine" parent="">
+        <item name="android:textColor">@color/greeny_blue</item>
+        <item name="android:textSize">@dimen/tag_line_text_size</item>
+        <item name="android:fontFamily">@font/coolvetica_rg</item>
+        <item name="android:background">@drawable/tag_line_background</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

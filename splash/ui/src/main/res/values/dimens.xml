@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tag_line_text_size">26sp</dimen>
+    <dimen name="tag_line_bg_corner_radius">16dp</dimen>
+    <dimen name="tag_line_bg_lr_padding">16dp</dimen>
+    <dimen name="tag_line_bg_bottom_padding">1dp</dimen>
+</resources>
