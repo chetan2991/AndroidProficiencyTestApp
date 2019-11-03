@@ -1,8 +1,7 @@
-package com.chetan.splash.ui
+package com.chetan.ui
 
 import androidx.lifecycle.*
-import com.chetan.splash.ui.SplashDeepLinks.deepLinkToHome
-import com.chetan.ui.Navigator
+import com.chetan.ui.SplashDeepLinks.deepLinkToHome
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject

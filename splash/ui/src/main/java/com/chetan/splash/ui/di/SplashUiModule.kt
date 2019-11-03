@@ -1,9 +1,8 @@
-package com.chetan.splash.ui.di
+package com.chetan.ui.di
 
 import androidx.lifecycle.ViewModel
-import com.chetan.splash.ui.SplashFragment
-import com.chetan.splash.ui.SplashViewModel
-import com.chetan.ui.di.ViewModelKey
+import com.chetan.ui.SplashFragment
+import com.chetan.ui.SplashViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

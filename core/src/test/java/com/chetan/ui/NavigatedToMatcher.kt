@@ -1,11 +1,12 @@
-package com.chetan.ui
+package com.chetan.ui.test
 
 import androidx.navigation.NavDirections
+import com.chetan.ui.NavigateTo
+import com.chetan.ui.Navigator
 import com.chetan.ui.event.Event
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
-
 
 /**
  * Returns matcher that checks that [Navigator] has navigated to given destination.

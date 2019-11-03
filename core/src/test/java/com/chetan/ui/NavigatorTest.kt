@@ -1,4 +1,4 @@
-package com.chetan.ui
+package com.chetan.ui.test
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Lifecycle
@@ -9,6 +9,8 @@ import androidx.navigation.NavDirections
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.navOptions
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.chetan.ui.NavigateTo
+import com.chetan.ui.Navigator
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever

@@ -1,8 +1,7 @@
-package com.chetan.splash.ui
+package com.chetan.ui
 
 import androidx.navigation.navOptions
 import com.chetan.ui.NavigateTo.DeepLink
-import com.chetan.ui.fadeAnimation
 
 /**
  *
