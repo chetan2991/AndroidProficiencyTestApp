@@ -1,4 +1,4 @@
-package com.chetan.ui
+package com.chetan.splash.ui
 
 
 /**

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="post_comment_edit_text_corner">6dp</dimen>
+    <dimen name="post_comment_edit_text_stroke">1dp</dimen>
+    <dimen name="post_comment_button_height">48dp</dimen>
+    <dimen name="post_comment_button_width">56dp</dimen>
+    <dimen name="post_comment_progress_height">32dp</dimen>
+    <dimen name="post_comment_progress_width">32dp</dimen>
+</resources>

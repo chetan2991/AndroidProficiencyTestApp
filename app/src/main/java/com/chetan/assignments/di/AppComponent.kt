@@ -2,8 +2,9 @@ package com.chetan.assignments.di
 
 import android.app.Application
 import com.chetan.assignments.App
+import com.chetan.base.ui.di.BaseUiModule
+import com.chetan.home.ui.di.HomeUiModule
 import com.chetan.splash.ui.di.SplashUiModule
-import com.chetan.ui.di.BaseUiModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -14,7 +15,8 @@ import javax.inject.Singleton
 @Component(modules = [
 AndroidSupportInjectionModule::class,
     BaseUiModule::class,
-    SplashUiModule::class
+    SplashUiModule::class,
+    HomeUiModule::class
 ])
 interface AppComponent : AndroidInjector<App> {
 

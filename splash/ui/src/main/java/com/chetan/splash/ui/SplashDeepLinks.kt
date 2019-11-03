@@ -1,14 +1,16 @@
-package com.chetan.ui
+package com.chetan.splash.ui
 
 import androidx.navigation.navOptions
-import com.chetan.ui.NavigateTo.DeepLink
+import com.chetan.base.ui.NavigateTo
+import com.chetan.base.ui.fadeAnimation
+
 
 /**
  *
  * Deep-links for navigating from [SplashFragment]
  */
 object SplashDeepLinks {
-    private val deepLinkToHome = DeepLink(
+    private val deepLinkToHome = NavigateTo.DeepLink(
         "assignment://chetan/home",
         navOptions {
             popUpTo(R.id.splashFragment) {

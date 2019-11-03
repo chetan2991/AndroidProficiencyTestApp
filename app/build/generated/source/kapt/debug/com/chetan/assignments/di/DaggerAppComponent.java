@@ -4,19 +4,25 @@ package com.chetan.assignments.di;
 import android.app.Application;
 import androidx.lifecycle.ViewModel;
 import com.chetan.assignments.App;
+import com.chetan.base.ui.ViewModelFactory;
+import com.chetan.base.ui.ViewModelFactory_Factory;
+import com.chetan.home.ui.HomeFragment;
+import com.chetan.home.ui.HomeFragment_MembersInjector;
+import com.chetan.home.ui.HomeViewModel;
+import com.chetan.home.ui.HomeViewModel_Factory;
+import com.chetan.home.ui.di.HomeUiModule_HomeFragment;
 import com.chetan.splash.ui.SplashFragment;
 import com.chetan.splash.ui.SplashFragment_MembersInjector;
 import com.chetan.splash.ui.SplashViewModel;
 import com.chetan.splash.ui.SplashViewModel_Factory;
 import com.chetan.splash.ui.di.SplashUiModule_SplashFragment;
-import com.chetan.ui.ViewModelFactory;
-import com.chetan.ui.ViewModelFactory_Factory;
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication_MembersInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.DispatchingAndroidInjector_Factory;
 import dagger.android.support.DaggerFragment_MembersInjector;
 import dagger.internal.DoubleCheck;
+import dagger.internal.MapBuilder;
 import dagger.internal.MapProviderFactory;
 import dagger.internal.Preconditions;
 import java.util.Collections;
@@ -29,6 +35,8 @@ import javax.inject.Provider;
 })
 public final class DaggerAppComponent implements AppComponent {
   private Provider<SplashUiModule_SplashFragment.SplashFragmentSubcomponent.Factory> splashFragmentSubcomponentFactoryProvider;
+
+  private Provider<HomeUiModule_HomeFragment.HomeFragmentSubcomponent.Factory> homeFragmentSubcomponentFactoryProvider;
 
   private Provider<Map<Class<? extends ViewModel>, Provider<ViewModel>>> mapOfClassOfAndProviderOfViewModelProvider;
 
@@ -45,7 +53,7 @@ public final class DaggerAppComponent implements AppComponent {
 
   private Map<Class<?>, Provider<AndroidInjector.Factory<?>>> getMapOfClassOfAndProviderOfAndroidInjectorFactoryOf(
       ) {
-    return Collections.<Class<?>, Provider<AndroidInjector.Factory<?>>>singletonMap(SplashFragment.class, (Provider) splashFragmentSubcomponentFactoryProvider);}
+    return MapBuilder.<Class<?>, Provider<AndroidInjector.Factory<?>>>newMapBuilder(2).put(SplashFragment.class, (Provider) splashFragmentSubcomponentFactoryProvider).put(HomeFragment.class, (Provider) homeFragmentSubcomponentFactoryProvider).build();}
 
   private DispatchingAndroidInjector<Object> getDispatchingAndroidInjectorOfObject() {
     return DispatchingAndroidInjector_Factory.newInstance(getMapOfClassOfAndProviderOfAndroidInjectorFactoryOf(), Collections.<String, Provider<AndroidInjector.Factory<?>>>emptyMap());}
@@ -57,7 +65,12 @@ public final class DaggerAppComponent implements AppComponent {
       public SplashUiModule_SplashFragment.SplashFragmentSubcomponent.Factory get() {
         return new SplashFragmentSubcomponentFactory();}
     };
-    this.mapOfClassOfAndProviderOfViewModelProvider = MapProviderFactory.<Class<? extends ViewModel>, ViewModel>builder(1).put(SplashViewModel.class, (Provider) SplashViewModel_Factory.create()).build();
+    this.homeFragmentSubcomponentFactoryProvider = new Provider<HomeUiModule_HomeFragment.HomeFragmentSubcomponent.Factory>() {
+      @Override
+      public HomeUiModule_HomeFragment.HomeFragmentSubcomponent.Factory get() {
+        return new HomeFragmentSubcomponentFactory();}
+    };
+    this.mapOfClassOfAndProviderOfViewModelProvider = MapProviderFactory.<Class<? extends ViewModel>, ViewModel>builder(2).put(SplashViewModel.class, (Provider) SplashViewModel_Factory.create()).put(HomeViewModel.class, (Provider) HomeViewModel_Factory.create()).build();
     this.viewModelFactoryProvider = DoubleCheck.provider(ViewModelFactory_Factory.create(mapOfClassOfAndProviderOfViewModelProvider));
   }
 
@@ -98,6 +111,30 @@ public final class DaggerAppComponent implements AppComponent {
     private SplashFragment injectSplashFragment(SplashFragment instance) {
       DaggerFragment_MembersInjector.injectAndroidInjector(instance, DaggerAppComponent.this.getDispatchingAndroidInjectorOfObject());
       SplashFragment_MembersInjector.injectFactory(instance, DaggerAppComponent.this.viewModelFactoryProvider.get());
+      return instance;
+    }
+  }
+
+  private final class HomeFragmentSubcomponentFactory implements HomeUiModule_HomeFragment.HomeFragmentSubcomponent.Factory {
+    @Override
+    public HomeUiModule_HomeFragment.HomeFragmentSubcomponent create(HomeFragment arg0) {
+      Preconditions.checkNotNull(arg0);
+      return new HomeFragmentSubcomponentImpl(arg0);
+    }
+  }
+
+  private final class HomeFragmentSubcomponentImpl implements HomeUiModule_HomeFragment.HomeFragmentSubcomponent {
+    private HomeFragmentSubcomponentImpl(HomeFragment arg0) {
+
+    }
+
+    @Override
+    public void inject(HomeFragment arg0) {
+      injectHomeFragment(arg0);}
+
+    private HomeFragment injectHomeFragment(HomeFragment instance) {
+      DaggerFragment_MembersInjector.injectAndroidInjector(instance, DaggerAppComponent.this.getDispatchingAndroidInjectorOfObject());
+      HomeFragment_MembersInjector.injectFactory(instance, DaggerAppComponent.this.viewModelFactoryProvider.get());
       return instance;
     }
   }

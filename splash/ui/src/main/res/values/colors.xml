@@ -3,8 +3,5 @@
     <color name="splash_bg_gradient_start">#5EEDf0</color>
     <color name="splash_bg_gradient_end">#EB27F6</color>
 
-    // move to base
-    <color name="app_name_color">#2929E9</color>
-    <color name="greeny_blue">#46b7F6</color>
-
 </resources>
+

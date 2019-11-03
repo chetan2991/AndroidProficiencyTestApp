@@ -1,0 +1,9 @@
+<resources>
+    <string name="empty" />
+    <string name="app_name">AndroidProficiencyTestApp</string>
+    <string name="app_tag_line">we for you</string>
+    <string name="generic_failure_message">Something went wrong. Please try again later.</string>
+    <string name="toolbar_back_content_desc">Back</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

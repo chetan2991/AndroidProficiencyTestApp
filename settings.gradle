@@ -1,5 +1,11 @@
 include ':app'
 include ':splash:ui'
-include ':core'
+include ':home:domain'
+include ':home:data'
+include ':home:ui'
+//include ':base:data'
+include ':base:ui'
+//include ':base:domain'
 
-rootProject.name='AndroidProficiencyExercise'
+
+rootProject.name = 'AndroidProficiencyExercise'

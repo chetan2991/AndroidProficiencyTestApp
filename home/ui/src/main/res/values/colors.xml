@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue">#7cd3e7</color>
+    <color name="soft_pink">#ff9fcb</color>
+    <color name="pale_salmon">#ffc899</color>
+    <color name="light_salmon">#ff9999</color>
+    <color name="pastel_blue">#9fc0ff</color>
+    <color name="floral_green">#7ce7d6</color>
+    <color name="dark_green_blue">#2a786c</color>
+
+    <color name="new_story_fab_background">#FFFFFF</color>
+    <color name="post_comment_edit_text_stroke">#80878787</color>
+    <color name="ic_send_normal">#FF46B7A6</color>
+    <color name="ic_send_disabled">#7F46B7A6</color>
+</resources>

@@ -1,4 +1,4 @@
-package com.chetan.ui
+package com.chetan.splash.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,6 +27,7 @@ class SplashFragment : DaggerFragment() {
         super.onViewCreated(view, savedInstanceState)
         val vm: SplashViewModel by viewModels { factory }
         vm.navigator.navigateBy(this)
+        vm.performSplashAction()
         vm.splashState.observe(this, Observer {
             vm.navigate(it!!)
         })

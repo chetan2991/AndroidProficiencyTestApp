@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_two_hundred_fifty">250dp</dimen>
+    <dimen name="margin_four">4dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_twelve">12dp</dimen>
+    <dimen name="margin_sixteen">16dp</dimen>
+    <dimen name="margin_twenty">20dp</dimen>
+    <dimen name="margin_twenty_three">23dp</dimen>
+    <dimen name="margin_twenty_four">24dp</dimen>
+    <dimen name="margin_twenty_five">25dp</dimen>
+    <dimen name="margin_thirty">30dp</dimen>
+    <dimen name="margin_fourty">40dp</dimen>
+    <dimen name="margin_seventy">70dp</dimen>
+    <dimen name="margin_eighty">80dp</dimen>
+    <dimen name="margin_hundred_twenty">120dp</dimen>
+    <dimen name="margin_one_thirty_five">135dp</dimen>
+    <dimen name="text_twelve">12sp</dimen>
+    <dimen name="text_fourteen">14sp</dimen>
+    <dimen name="text_fifteen">15sp</dimen>
+    <dimen name="text_eighteen">18sp</dimen>
+    <dimen name="text_twenty_six">26sp</dimen>
+    <dimen name="text_twenty_two">22sp</dimen>
+    <dimen name="text_twenty_four">24sp</dimen>
+    <dimen name="text_fifty_four">54sp</dimen>
+    <dimen name="text_seventy_nine">79sp</dimen>
+
+    <!-- Toolbar dimens -->
+    <dimen name="toolbar_elevation">8dp</dimen>
+    <dimen name="toolbar_title_text_size">21sp</dimen>
+
+    <!-- CardView dimens -->
+    <dimen name="card_view_radius">8dp</dimen>
+    <dimen name="card_view_elevation">4dp</dimen>
+</resources>
