@@ -408,6 +408,10 @@
         "source": "/Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/f4f9a9bfe5bdec6402028ed633cef68d/appcompat-1.0.0/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/res/merged/debug/layout_item_list_home.xml.flat",
+        "source": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/ui/build/intermediates/packaged_res/debug/layout/item_list_home.xml"
+    },
+    {
         "merged": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/f4f9a9bfe5bdec6402028ed633cef68d/appcompat-1.0.0/res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
@@ -2078,10 +2082,6 @@
     {
         "merged": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/res/merged/debug/layout_design_navigation_item_subheader.xml.flat",
         "source": "/Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/ead2b9cc5577521b275ccb3c45d36677/material-1.0.0/res/layout/design_navigation_item_subheader.xml"
-    },
-    {
-        "merged": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/res/merged/debug/layout_item_story.xml.flat",
-        "source": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/ui/build/intermediates/packaged_res/debug/layout/item_story.xml"
     },
     {
         "merged": "/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_ic_tick.png.flat",

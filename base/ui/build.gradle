@@ -49,6 +49,8 @@ android {
 
 dependencies {
 
+    implementation project(':base:domain')
+
     //dagger
     implementation(deps.dagger.daggerRuntime)
     kapt(deps.dagger.daggerCompiler)

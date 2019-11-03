@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                      
+
+                 
+                            
+                                                              
+           
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/story_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:tag="layout/item_list_home_0"                   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_sixteen">
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/avenir"
+                android:maxLines="1"
+                android:tag="binding_1"                       
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_fifteen"
+                tools:text="Karen C" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_ten">
+
+                <TextView
+                    android:id="@+id/description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_ten"
+                    android:layout_marginRight="@dimen/margin_ten"
+                    android:drawableEnd="@drawable/ic_comments"
+                    android:drawableRight="@drawable/ic_comments"
+                    android:drawablePadding="@dimen/margin_five"
+                    android:fontFamily="@font/avenir"
+                    android:tag="binding_2"                             
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_fourteen"
+                    tools:text="adfjlalfgjsdgjdsl
+                                jlksjgfjkgjjgjhgkk
+                            jgkfsjkdfsjgjsdfjgsfd" />
+
+                <ImageView
+                    android:id="@+id/content_img"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_alignRight="@+id/description_text_view"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+         

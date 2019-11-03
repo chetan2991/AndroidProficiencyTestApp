@@ -1,114 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent"
-    android:layout_width="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome Home"
-        android:textSize="40sp"
-        android:gravity="center"></TextView>
-</LinearLayout>
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
 
-<!--    <data class=".HomeFragmentBinding">-->
+                                                        
 
-<!--        <variable-->
-<!--            name="viewModel"-->
-<!--            type="com.chetan.home.ui.HomeViewModel" />-->
+    
 
-<!--        <variable-->
-<!--            name="viewState"-->
-<!--            type="com.chetan.home.ui.HomeViewState" />-->
-<!--    </data>-->
+                 
+                            
+                                                      
 
-<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:snackbar="@{viewState.snackbar}">-->
+                 
+                            
+                                                      
+           
 
-<!--        <com.google.android.material.appbar.AppBarLayout-->
-<!--            style="@style/Widget.App.AppBarLayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="layout/fragment_home_0"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--            <androidx.appcompat.widget.Toolbar-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                app:title="app" />-->
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/Widget.App.AppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-<!--        </com.google.android.material.appbar.AppBarLayout>-->
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="app" />
 
-<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
-<!--            android:id="@+id/stories_swipe_refresh"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
-<!--            app:onRefreshListener="@{() -> viewModel.loadStories()}"-->
-<!--            app:refreshing="@{viewState.loaderVisible}">-->
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/home_swipe_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:tag="binding_1"                                  
+                                                                  >
 
-<!--            <FrameLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent">-->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-<!--                <androidx.recyclerview.widget.RecyclerView-->
-<!--                    android:id="@+id/home_recycler_view"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:clipToPadding="false"-->
-<!--                    android:padding="@dimen/margin_sixteen"-->
-<!--                    app:items="@{viewState.storyStates}"-->
-<!--                    app:visibility="@{viewState.storyVisibility}" />-->
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:padding="@dimen/margin_sixteen"
+                            android:tag="binding_2"                
+                                                                             />
 
-<!--                <LinearLayout-->
-<!--                    android:id="@+id/error_view"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:orientation="vertical"-->
-<!--                    app:visibility="@{viewState.errorVisibility}">-->
+                        <LinearLayout
+                            android:id="@+id/error_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:tag="binding_3"                      >
 
-<!--                    <androidx.cardview.widget.CardView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_margin="@dimen/margin_sixteen">-->
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/margin_sixteen">
 
-<!--                        <TextView-->
-<!--                            android:id="@+id/error_message_text"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_marginStart="@dimen/margin_fourty"-->
-<!--                            android:layout_marginTop="@dimen/margin_thirty"-->
-<!--                            android:layout_marginEnd="@dimen/margin_fourty"-->
-<!--                            android:drawableBottom="@drawable/ic_error_cat"-->
-<!--                            android:drawablePadding="@dimen/margin_thirty"-->
-<!--                            android:fontFamily="@font/avenir"-->
-<!--                            android:textColor="@color/black"-->
-<!--                            android:textSize="@dimen/text_eighteen"-->
-<!--                            app:message="@{viewState.errorMessage}" />-->
+                                <TextView
+                                    android:id="@+id/error_message_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_fourty"
+                                    android:layout_marginTop="@dimen/margin_thirty"
+                                    android:layout_marginEnd="@dimen/margin_fourty"
+                                    android:drawableBottom="@drawable/ic_error_cat"
+                                    android:drawablePadding="@dimen/margin_thirty"
+                                    android:fontFamily="@font/avenir"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_eighteen"
+                                    android:tag="binding_4"                 />
 
-<!--                    </androidx.cardview.widget.CardView>-->
+                            </androidx.cardview.widget.CardView>
 
-<!--                    <Button-->
-<!--                        android:id="@+id/refresh_button"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginStart="@dimen/margin_sixteen"-->
-<!--                        android:layout_marginEnd="@dimen/margin_sixteen"-->
-<!--                        android:layout_marginBottom="@dimen/margin_sixteen"-->
-<!--                        android:enabled="@{viewState.refreshEnabled}"-->
-<!--                        android:fontFamily="@font/avenir"-->
-<!--                        android:onClick="@{() -> viewModel.loadStories()}"-->
-<!--                        android:text="@string/refresh" />-->
+                            <Button
+                                android:id="@+id/refresh_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_sixteen"
+                                android:layout_marginEnd="@dimen/margin_sixteen"
+                                android:layout_marginBottom="@dimen/margin_sixteen"
+                                android:tag="binding_5"                      
+                                android:fontFamily="@font/avenir"
+                                                                                   
+                                android:text="@string/refresh" />
 
-<!--                </LinearLayout>-->
+                        </LinearLayout>
 
-<!--            </FrameLayout>-->
+                    </FrameLayout>
 
-<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-<!--</layout>-->
+
+         
 

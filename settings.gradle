@@ -5,7 +5,7 @@ include ':home:data'
 include ':home:ui'
 //include ':base:data'
 include ':base:ui'
-//include ':base:domain'
+include ':base:domain'
 
 
-rootProject.name = 'AndroidProficiencyExercise'
+rootProject.name = 'APTest'

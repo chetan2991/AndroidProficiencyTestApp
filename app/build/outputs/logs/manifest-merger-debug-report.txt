@@ -7,6 +7,8 @@ INJECTED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/Androi
 MERGED from [:splash:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/splash/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:home:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:base:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:base:domain] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/domain/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:home:domain] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/domain/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.databinding:databinding-adapters:3.5.1] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/c515e43502bae9cb08f2f8c1b3553bb6/databinding-adapters-3.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.5.1] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/cedad63d24ffdee12ea86f42234e052a/databinding-runtime-3.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:dagger-android-support:2.24] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/48a6c2aa6bf108b3d64efc085fa933d5/jetified-dagger-android-support-2.24/AndroidManifest.xml:17:1-22:12
@@ -122,6 +124,10 @@ MERGED from [:home:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignme
 MERGED from [:home:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:base:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:base:ui] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:base:domain] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/domain/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:base:domain] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/domain/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:home:domain] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/domain/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:home:domain] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/home/domain/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.databinding:databinding-adapters:3.5.1] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/c515e43502bae9cb08f2f8c1b3553bb6/databinding-adapters-3.5.1/AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-adapters:3.5.1] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/c515e43502bae9cb08f2f8c1b3553bb6/databinding-adapters-3.5.1/AndroidManifest.xml:22:5-44
 MERGED from [androidx.databinding:databinding-runtime:3.5.1] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/cedad63d24ffdee12ea86f42234e052a/databinding-runtime-3.5.1/AndroidManifest.xml:22:5-44

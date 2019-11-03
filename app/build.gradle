@@ -53,6 +53,7 @@ android {
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/ui_debug.kotlin_module'
+        exclude 'META-INF/domain_debug.kotlin_module'
     }
 
 
