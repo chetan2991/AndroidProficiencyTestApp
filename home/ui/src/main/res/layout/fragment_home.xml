@@ -26,75 +26,82 @@
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:title="app" />
+                app:title="@{viewState.pageTitle}" />
 
         </com.google.android.material.appbar.AppBarLayout>
+
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-                    android:id="@+id/home_swipe_refresh"
+            android:id="@+id/home_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:onRefreshListener="@{() -> viewModel.refresh()}"
+            app:refreshing="@{viewState.loaderVisibility}">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recycler_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                    app:onRefreshListener="@{() -> viewModel.loadHomeList()}"
-                    app:refreshing="@{viewState.loaderVisibility}">
+                    android:clipToPadding="false"
+                    android:padding="@dimen/margin_sixteen"
+                    app:visibility="@{viewState.homeListVisibility}" />
 
-                    <FrameLayout
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/error_view"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        app:visibility="@{viewState.errorVisibility}">
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/home_recycler_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:clipToPadding="false"
-                            android:padding="@dimen/margin_sixteen"
-                            app:items="@{viewState.homeListStates}"
-                            app:visibility="@{viewState.homeListVisibility}" />
-
-                        <LinearLayout
-                            android:id="@+id/error_view"
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            app:visibility="@{viewState.errorVisibility}">
+                            android:layout_margin="@dimen/margin_sixteen">
 
-                            <androidx.cardview.widget.CardView
+                            <TextView
+                                android:id="@+id/error_message_text"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="@dimen/margin_sixteen">
-
-                                <TextView
-                                    android:id="@+id/error_message_text"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="@dimen/margin_fourty"
-                                    android:layout_marginTop="@dimen/margin_thirty"
-                                    android:layout_marginEnd="@dimen/margin_fourty"
-                                    android:drawableBottom="@drawable/ic_error_cat"
-                                    android:drawablePadding="@dimen/margin_thirty"
-                                    android:fontFamily="@font/avenir"
-                                    android:textColor="@color/black"
-                                    android:textSize="@dimen/text_eighteen"
-                                    app:message="@{viewState.errorMessage}" />
-
-                            </androidx.cardview.widget.CardView>
-
-                            <Button
-                                android:id="@+id/refresh_button"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="@dimen/margin_sixteen"
-                                android:layout_marginEnd="@dimen/margin_sixteen"
-                                android:layout_marginBottom="@dimen/margin_sixteen"
-                                android:enabled="@{viewState.refreshEnabled}"
+                                android:layout_marginStart="@dimen/margin_fourty"
+                                android:layout_marginTop="@dimen/margin_thirty"
+                                android:layout_marginEnd="@dimen/margin_fourty"
+                                android:drawableBottom="@drawable/ic_error_cat"
+                                android:drawablePadding="@dimen/margin_thirty"
                                 android:fontFamily="@font/avenir"
-                                android:onClick="@{() -> viewModel.loadHomeList()}"
-                                android:text="@string/refresh" />
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_eighteen"
+                                app:message="@{viewState.errorMessage}" />
 
-                        </LinearLayout>
+                        </androidx.cardview.widget.CardView>
 
-                    </FrameLayout>
+                        <Button
+                            android:id="@+id/refresh_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_sixteen"
+                            android:layout_marginEnd="@dimen/margin_sixteen"
+                            android:layout_marginBottom="@dimen/margin_sixteen"
+                            android:enabled="@{viewState.refreshEnabled}"
+                            android:fontFamily="@font/avenir"
+                            android:onClick="@{() -> viewModel.refresh()}"
+                            android:text="@string/refresh" />
 
-                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </FrameLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

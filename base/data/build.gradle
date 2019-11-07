@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+
+    implementation project(':base:domain')
+
+    implementation(deps.kotlin.kotlinstdlib)
+
+
+    implementation(deps.dagger.daggerRuntime)
+    kapt(deps.dagger.daggerCompiler)
+    kapt(deps.dagger.daggerProcessor)
+    kapt(deps.dagger.daggerAndroidRuntime)
+
+    api(deps.network.retrofit)
+    api(deps.network.okhttpLogging)
+    implementation(deps.network.okhttp)
+    implementation(deps.coroutine.coroutineAdapter)
+    api(deps.network.convertorGson)
+
+    implementation(deps.tools.timber)
+
+//    implementation(deps.room.roomRuntime)
+//    implementation(deps.room.roomCompiler)
+//    implementation(deps.room.roomKtx)
+
+    implementation(deps.lifeCycleArchitectureComponent.livedataKtx)
+
+//    implementation(project(":base:domain"))
+//    implementation(deps.kotlin.stdlib)
+//
+//    implementation(deps.dagger.runtime)
+//    kapt(deps.dagger.compiler)
+//
+//    implementation(deps.retrofit.client)
+//    implementation(deps.retrofit.adapterRxJava)
+//    implementation(deps.retrofit.converterGson)
+//    implementation(deps.okhttp.loggingInterceptor)
+//
+//    testImplementation(project(":test:domain"))
+//    testImplementation(deps.test.junit)
+//    testImplementation(deps.test.junitAndroid)
+//    testImplementation(deps.test.robolectric)
+//    testImplementation(deps.test.core)
+//    testImplementation(deps.test.mockWebServer)
+}
+

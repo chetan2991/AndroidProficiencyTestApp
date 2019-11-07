@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+android {
+    dataBinding {
+        enabled = true
+    }
+}
+dependencies {
+    implementation project(':base:domain')
+    implementation project(':base:ui')
+
+    implementation(deps.kotlin.kotlinstdlib)
+
+    //dagger
+    implementation(deps.dagger.daggerRuntime)
+    implementation(deps.dagger.daggerAndroidRuntime)
+    kapt(deps.dagger.daggerCompiler)
+
+    //ui
+    implementation(deps.ui.appcompact)
+    implementation(deps.ui.navigation)
+    implementation(deps.ui.material)
+
+
+    //test
+    implementation(deps.test.mockito)
+    implementation(deps.androidTest.archCore)
+    implementation(deps.test.fragment)
+    implementation(deps.androidTest.espressoCore)
+
+
+
+//    implementation(deps.rx.java)
+//    implementation(deps.rx.android)
+
+//    implementation(deps.test.rules)
+//    implementation(deps.test.rxidler)
+//    implementation(deps.test.okReplay)
+}

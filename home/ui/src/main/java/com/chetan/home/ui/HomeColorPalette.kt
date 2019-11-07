@@ -6,7 +6,7 @@ import java.io.Serializable
 /**
  * Data class to represent color palette for home.
  */
-data class HomeColorPalette(
+data class HomeColorPalette constructor(
     @ColorInt val primary: Int,
     @ColorInt val secondary: Int
 ) : Serializable {

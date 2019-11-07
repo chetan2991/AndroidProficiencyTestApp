@@ -27,6 +27,10 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
     buildTypes {
         release {
             minifyEnabled true
@@ -54,6 +58,7 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/ui_debug.kotlin_module'
         exclude 'META-INF/domain_debug.kotlin_module'
+        exclude 'META-INF/data_debug.kotlin_module'
     }
 
 
@@ -78,7 +83,10 @@ dependencies {
 
     implementation project(':splash:ui')
     implementation project(':home:ui')
+    implementation project(':home:domain')
+    implementation project(':home:data')
     implementation project(':base:ui')
-
-
+    implementation project(':base:domain')
+    implementation project(':base:data')
 }
+

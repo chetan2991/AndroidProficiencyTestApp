@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="story_list_title">Stories</string>
-    <string name="post_story">Post Story</string>
-    <string name="post_story_fragment_title">New Story</string>
-    <string name="post_story_title_empty">Story \'Title\' is missing!</string>
-    <string name="post_story_description_empty">Story \'Description\' is missing!</string>
-    <string name="post_story_description">Tell us more…</string>
-    <string name="post_story_title">TITLE</string>
-    <string name="post_story_discard_alert_message">Do you want to discard this story?</string>
-    <string name="no_story_message">No Stories yet!\n\nBe the first to publish one!</string>
+    <string name="facts_list_title">Facts</string>
+    <string name="no_fact_found_message">No Fact Found!!</string>
     <string name="refresh">Refresh</string>
-    <string name="story_title">Comments</string>
-    <string name="post_comment_successful">Comment posted successfully</string>
-    <string name="new_comment_hint">Type new comment</string>
 </resources>

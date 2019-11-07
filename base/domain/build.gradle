@@ -46,4 +46,9 @@ android {
         unitTests.includeAndroidResources  = true
     }
 }
-
+dependencies{
+    implementation(deps.dagger.daggerRuntime)
+    kapt(deps.dagger.daggerCompiler)
+    kapt(deps.dagger.daggerProcessor)
+    implementation(deps.dagger.daggerAndroidRuntime)
+}

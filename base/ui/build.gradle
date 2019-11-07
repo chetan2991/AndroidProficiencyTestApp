@@ -61,6 +61,12 @@ dependencies {
     implementation(deps.lifeCycleArchitectureComponent.lifecycleViewModelKtx)
     implementation(deps.ui.navigation)
     implementation(deps.ui.material)
+    api(deps.pagging.paggingRuntime)
+
+
+    //glide
+    api(deps.glide.runtime)
+    kapt(deps.glide.compile)
 
 
     //testing

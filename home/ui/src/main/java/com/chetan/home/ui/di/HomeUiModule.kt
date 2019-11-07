@@ -2,6 +2,8 @@ package com.chetan.home.ui.di
 
 import androidx.lifecycle.ViewModel
 import com.chetan.base.ui.di.ViewModelKey
+import com.chetan.home.ui.HomeColorPalettes
+import com.chetan.home.ui.HomeColorPalettesImpl
 import com.chetan.home.ui.HomeFragment
 import com.chetan.home.ui.HomeViewModel
 import dagger.Binds
@@ -9,7 +11,7 @@ import dagger.Module
 import dagger.android.ContributesAndroidInjector
 import dagger.multibindings.IntoMap
 
-@Module
+@Module(includes = [])
 abstract class HomeUiModule {
 
     @ContributesAndroidInjector
@@ -20,4 +22,6 @@ abstract class HomeUiModule {
     @ViewModelKey(HomeViewModel::class)
     abstract fun homeViewModel(viewModel: HomeViewModel) : ViewModel
 
+    @Binds
+    abstract fun homeColorPalettes(homeColorPalettes: HomeColorPalettesImpl): HomeColorPalettes
 }

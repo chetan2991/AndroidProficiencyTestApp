@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/base/data" />
             <option value="$PROJECT_DIR$/base/domain" />
             <option value="$PROJECT_DIR$/base/ui" />
             <option value="$PROJECT_DIR$/home" />
@@ -18,6 +19,8 @@
             <option value="$PROJECT_DIR$/home/ui" />
             <option value="$PROJECT_DIR$/splash" />
             <option value="$PROJECT_DIR$/splash/ui" />
+            <option value="$PROJECT_DIR$/test" />
+            <option value="$PROJECT_DIR$/test/ui" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -3,9 +3,10 @@ include ':splash:ui'
 include ':home:domain'
 include ':home:data'
 include ':home:ui'
-//include ':base:data'
 include ':base:ui'
 include ':base:domain'
+include ':base:data'
+include ':test:ui'
 
 
 rootProject.name = 'APTest'

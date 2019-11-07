@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chetan.home.data" />
+<manifest package="com.chetan.home.data" />
