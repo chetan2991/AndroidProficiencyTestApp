@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+
+    implementation project(':base:domain')
+
+    implementation(deps.kotlin.kotlinstdlib)
+
+
+    implementation(deps.dagger.daggerRuntime)
+    kapt(deps.dagger.daggerCompiler)
+    kapt(deps.dagger.daggerProcessor)
+    kapt(deps.dagger.daggerAndroidRuntime)
+
+    api(deps.network.retrofit)
+    api(deps.network.okhttpLogging)
+    implementation(deps.network.okhttp)
+    implementation(deps.coroutine.coroutineAdapter)
+    api(deps.network.convertorGson)
+
+    implementation(deps.tools.timber)
+    
+
+    implementation(deps.lifeCycleArchitectureComponent.livedataKtx)
+
+    testImplementation(deps.test.junit)
+
+}
+

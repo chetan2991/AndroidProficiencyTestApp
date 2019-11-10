@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".HomeFragmentBinding">
+
+        <variable
+            name="viewModel"
+            type="com.chetan.home.ui.HomeViewModel" />
+
+        <variable
+            name="viewState"
+            type="com.chetan.home.ui.HomeViewState" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snackbar="@{viewState.snackbar}">
+
+        <com.google.android.material.appbar.AppBarLayout
+            style="@style/Widget.App.AppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@{viewState.pageTitle}" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/home_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:onRefreshListener="@{() -> viewModel.refresh()}"
+            app:refreshing="@{viewState.loaderVisibility}">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:padding="@dimen/margin_sixteen"
+                    app:visibility="@{viewState.homeListVisibility}" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/error_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        app:visibility="@{viewState.errorVisibility}">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_sixteen">
+
+                            <TextView
+                                android:id="@+id/error_message_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_fourty"
+                                android:layout_marginTop="@dimen/margin_thirty"
+                                android:layout_marginEnd="@dimen/margin_fourty"
+                                android:drawableBottom="@drawable/ic_error_cat"
+                                android:drawablePadding="@dimen/margin_thirty"
+                                android:fontFamily="@font/avenir"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_eighteen"
+                                app:message="@{viewState.errorMessage}" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/refresh_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_sixteen"
+                            android:layout_marginEnd="@dimen/margin_sixteen"
+                            android:layout_marginBottom="@dimen/margin_sixteen"
+                            android:enabled="@{viewState.refreshEnabled}"
+                            android:fontFamily="@font/avenir"
+                            android:onClick="@{() -> viewModel.refresh()}"
+                            android:text="@string/refresh" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </FrameLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>
+
+

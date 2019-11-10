@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":-1,"enabled":true,"outputFile":"ui-qa.aar","fullName":"qa","baseName":"qa"},"path":"../../library_manifest/qa/AndroidManifest.xml","properties":{"packageId":"com.chetan.test.ui","split":""}}]

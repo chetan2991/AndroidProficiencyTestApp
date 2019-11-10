@@ -67,16 +67,30 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   @Override
   public List<DataBinderMapper> collectDependencies() {
-    ArrayList<DataBinderMapper> result = new ArrayList<DataBinderMapper>(1);
+    ArrayList<DataBinderMapper> result = new ArrayList<DataBinderMapper>(5);
     result.add(new androidx.databinding.library.baseAdapters.DataBinderMapperImpl());
+    result.add(new com.chetan.base.domain.DataBinderMapperImpl());
+    result.add(new com.chetan.base.ui.DataBinderMapperImpl());
+    result.add(new com.chetan.home.ui.DataBinderMapperImpl());
+    result.add(new com.chetan.splash.ui.DataBinderMapperImpl());
     return result;
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(12);
 
     static {
       sKeys.put(0, "_all");
+      sKeys.put(1, "pageTitle");
+      sKeys.put(2, "viewState");
+      sKeys.put(3, "errorMessage");
+      sKeys.put(4, "refreshEnabled");
+      sKeys.put(5, "viewModel");
+      sKeys.put(6, "snackbar");
+      sKeys.put(7, "homeListStates");
+      sKeys.put(8, "homeListVisibility");
+      sKeys.put(9, "errorVisibility");
+      sKeys.put(10, "loaderVisibility");
     }
   }
 

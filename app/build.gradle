@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 //A gradle plugin to calculate Android-friendly version names and codes from git tags.
-apply plugin : 'com.gladed.androidgitversion'
+apply plugin: 'com.gladed.androidgitversion'
 
 androidGitVersion {
     codeFormat = "MNNPPBBB"
@@ -27,11 +27,14 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
     buildTypes {
         release {
             minifyEnabled true
             debuggable false
-            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         qa {
@@ -39,11 +42,10 @@ android {
             initWith debug
             debuggable false
             minifyEnabled true
-            shrinkResources true
             applicationIdSuffix ".qa"
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-        debug{
+        debug {
             debuggable true
             applicationIdSuffix ".debug"
         }
@@ -51,6 +53,17 @@ android {
     dataBinding {
         enabled = true
     }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/ui_debug.kotlin_module'
+        exclude 'META-INF/domain_debug.kotlin_module'
+        exclude 'META-INF/data_debug.kotlin_module'
+        exclude 'META-INF/metadata.jvm.kotlin_module'
+        exclude 'META-INF/metadata.kotlin_module'
+    }
+
+
 }
 
 dependencies {
@@ -70,4 +83,12 @@ dependencies {
     implementation(deps.ui.fragment)
     implementation(deps.ui.navigation)
 
+    implementation project(':splash:ui')
+    implementation project(':home:ui')
+    implementation project(':home:domain')
+    implementation project(':home:data')
+    implementation project(':base:ui')
+    implementation project(':base:domain')
+    implementation project(':base:data')
 }
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_name_color">#2929E9</color>
+    <color name="greeny_blue">#46b7F6</color>
+
+    <color name="primary">#FFFFFF</color>
+    <color name="primary_dark">#2A786C</color>
+    <color name="accent">#30D0C5</color>
+    <color name="window_background">#FFFFFF</color>
+    <color name="toolbar_background">#FFFFFF</color>
+    <color name="color_edge_effect">#30D0C5</color>
+
+
+    <color name="medium_pink">#ed619d</color>
+    <color name="blue">#30d0c5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#363636</color>
+    <color name="grey">#6c6c6c</color>
+    <color name="dark_slate_blue">#265763</color>
+    <color name="dusk_blue">#216878</color>
+
+
+</resources>

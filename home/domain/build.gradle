@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+
+    implementation project(':base:domain')
+    implementation project(':base:data')
+
+    implementation(deps.kotlin.kotlinstdlib)
+
+    implementation(deps.pagging.paggingRuntime)
+    implementation(deps.lifeCycleArchitectureComponent.livedataKtx)
+
+    implementation(deps.room.roomRuntime)
+    implementation(deps.room.roomCompiler)
+    implementation(deps.room.roomKtx)
+
+
+//    implementation(deps.rx.java)
+    implementation(deps.dagger.daggerAndroidRuntime)
+    implementation(deps.dagger.daggerRuntime)
+    kapt(deps.dagger.daggerCompiler)
+    kapt(deps.dagger.daggerProcessor)
+
+
+    testImplementation(deps.test.junit)
+    testImplementation(deps.test.mockito)
+}
