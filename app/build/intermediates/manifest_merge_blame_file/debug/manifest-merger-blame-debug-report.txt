@@ -1,11 +1,11 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.chetan.assignments.debug"
-4    android:versionCode="9"
-5    android:versionName="untagged.9-b6b469f-dirty" >
+4    android:versionCode="10"
+5    android:versionName="untagged.10-b71795c-dirty" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="14"
+8        android:minSdkVersion="16"
 8-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
 9-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml
@@ -20,25 +20,25 @@
 14    <application
 14-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:5:5-21:19
 15        android:name="com.chetan.assignments.App"
-15-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:9:9-50
+15-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:6:9-50
 16        android:allowBackup="false"
-16-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:6:9-36
+16-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:7:9-36
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 17-->[androidx.core:core:1.1.0-rc01] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/1441a0cd25810bfdd99a2b01a4f70645/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
-19-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:7:9-43
+19-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:8:9-43
 20        android:label="@string/app_name"
-20-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:8:9-41
+20-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:9:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
 21-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:10:9-54
 22        android:supportsRtl="false"
 22-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:11:9-36
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme"
-24-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:13:9-40
+24-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:12:9-40
 25        android:usesCleartextTraffic="true" >
-25-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:12:9-44
+25-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:13:9-44
 26        <activity android:name="com.chetan.assignments.MainActivity" >
 26-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:14:9-20:20
 26-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:14:19-47

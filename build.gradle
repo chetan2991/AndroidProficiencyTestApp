@@ -47,7 +47,7 @@ buildscript {
 
             //android config
             'compileSdkVersion'      : 29,
-            'minSdkVersion'          : 14,
+            'minSdkVersion'          : 16,
             'targetSdkVersion'       : 29,
             'buildToolsVersion'      : "29.0.1",
             'versionCode'            : 1,

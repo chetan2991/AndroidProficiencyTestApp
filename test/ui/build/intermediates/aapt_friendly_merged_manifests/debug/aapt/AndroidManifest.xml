@@ -3,7 +3,7 @@
     package="com.chetan.test.ui" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
 </manifest>

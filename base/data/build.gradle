@@ -21,29 +21,11 @@ dependencies {
     api(deps.network.convertorGson)
 
     implementation(deps.tools.timber)
-
-//    implementation(deps.room.roomRuntime)
-//    implementation(deps.room.roomCompiler)
-//    implementation(deps.room.roomKtx)
+    
 
     implementation(deps.lifeCycleArchitectureComponent.livedataKtx)
 
-//    implementation(project(":base:domain"))
-//    implementation(deps.kotlin.stdlib)
-//
-//    implementation(deps.dagger.runtime)
-//    kapt(deps.dagger.compiler)
-//
-//    implementation(deps.retrofit.client)
-//    implementation(deps.retrofit.adapterRxJava)
-//    implementation(deps.retrofit.converterGson)
-//    implementation(deps.okhttp.loggingInterceptor)
-//
-//    testImplementation(project(":test:domain"))
-//    testImplementation(deps.test.junit)
-//    testImplementation(deps.test.junitAndroid)
-//    testImplementation(deps.test.robolectric)
-//    testImplementation(deps.test.core)
-//    testImplementation(deps.test.mockWebServer)
+    testImplementation(deps.test.junit)
+
 }
 

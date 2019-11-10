@@ -75,23 +75,6 @@ class NavigatorTest {
         verify(mockedNavController).popBackStack()
     }
 
-//    @Test
-//    fun shouldNavigateBackTo() {
-//        // GIVEN
-//        val navigator = Navigator()
-//        val backTo = NavigateTo.BackTo(R.id.container, false)
-//
-//        // WHEN
-//        navigator.navigateBy(mockedFragment)
-//        navigator.navigate(backTo)
-//
-//        // THEN
-//        Assert.assertThat(navigator, navigatedTo(backTo))
-//        lifecycle.handleLifecycleEvent(Lifecycle.Event.ON_RESUME)
-//        verify(mockedNavController).popBackStack(backTo.destinationId, backTo.inclusive)
-//    }
-
-
 }
 
 

@@ -1,6 +1,6 @@
 @file:SuppressWarnings("MatchingDeclarationName")
 
-package com.chetan.test
+package com.chetan.test.ui
 
 import android.content.res.Resources
 import android.view.View

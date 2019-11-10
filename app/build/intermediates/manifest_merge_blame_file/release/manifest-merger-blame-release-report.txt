@@ -1,0 +1,122 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.chetan.assignments"
+4    android:versionCode="10"
+5    android:versionName="untagged.10-b71795c-dirty" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:base:data] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/data/build/intermediates/library_manifest/release/AndroidManifest.xml:9:5-67
+11-->[:base:data] /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/base/data/build/intermediates/library_manifest/release/AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.REORDER_TASKS" />
+12-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:25:5-72
+12-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:25:22-69
+13
+14    <application
+14-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:5:5-21:19
+15        android:name="com.chetan.assignments.App"
+15-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:6:9-50
+16        android:allowBackup="false"
+16-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:7:9-36
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0-rc01] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/1441a0cd25810bfdd99a2b01a4f70645/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
+18        android:icon="@mipmap/ic_launcher"
+18-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:8:9-43
+19        android:label="@string/app_name"
+19-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:9:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:10:9-54
+21        android:supportsRtl="false"
+21-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:11:9-36
+22        android:theme="@style/AppTheme"
+22-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:12:9-40
+23        android:usesCleartextTraffic="true" >
+23-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:13:9-44
+24        <activity android:name="com.chetan.assignments.MainActivity" >
+24-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:14:9-20:20
+24-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:14:19-47
+25            <intent-filter>
+25-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:15:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:17-69
+26-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:18:17-77
+28-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:28:9-37:20
+32            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
+32-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:29:13-96
+33            android:exported="true"
+33-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:30:13-36
+34            android:multiprocess="true"
+34-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:31:13-40
+35            android:taskAffinity=""
+35-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:32:13-36
+36            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
+36-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:33:13-78
+37            <intent-filter>
+37-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:34:13-36:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:17-69
+38-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:25-66
+39            </intent-filter>
+40        </activity>
+41
+42        <service
+42-->[androidx.room:room-runtime:2.1.0-alpha07] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/0f43bd2582f2b22cce832c724e6a4333/room-runtime-2.1.0-alpha07/AndroidManifest.xml:23:9-25:40
+43            android:name="androidx.room.MultiInstanceInvalidationService"
+43-->[androidx.room:room-runtime:2.1.0-alpha07] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/0f43bd2582f2b22cce832c724e6a4333/room-runtime-2.1.0-alpha07/AndroidManifest.xml:24:13-74
+44            android:exported="false" />
+44-->[androidx.room:room-runtime:2.1.0-alpha07] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/0f43bd2582f2b22cce832c724e6a4333/room-runtime-2.1.0-alpha07/AndroidManifest.xml:25:13-37
+45
+46        <activity
+46-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:27:9-33:20
+47            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+47-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:28:13-99
+48            android:theme="@style/InstrumentationActivityInvokerBootstrapActivityTheme" >
+48-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:29:13-88
+49            <intent-filter>
+49-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:34:13-36:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:17-69
+50-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:25-66
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:34:9-40:20
+54            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+54-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:35:13-95
+55            android:theme="@style/InstrumentationActivityInvokerEmptyActivityTheme" >
+55-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:36:13-84
+56            <intent-filter>
+56-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:34:13-36:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:17-69
+57-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:25-66
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:41:9-47:20
+61            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+61-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:42:13-103
+62            android:theme="@style/InstrumentationActivityInvokerFloatingActivityTheme" >
+62-->[androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:43:13-87
+63            <intent-filter>
+63-->[androidx.fragment:fragment-testing:1.1.0-rc03] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/470793560837e5f0e186fa2ec5f28701/fragment-testing-1.1.0-rc03/AndroidManifest.xml:34:13-36:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:17-69
+64-->/Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:16:25-66
+65            </intent-filter>
+66        </activity>
+67    </application>
+68
+69</manifest>

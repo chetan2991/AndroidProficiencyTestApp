@@ -7,6 +7,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.chetan.base.ui.Message
 import com.chetan.base.ui.SnackbarEvent
 import com.chetan.base.ui.Visibility
+import com.chetan.home.domain.model.Fact
 import com.chetan.test.hasSnackbar
 import com.chetan.test.withMessage
 import com.nhaarman.mockitokotlin2.mock
@@ -28,7 +29,7 @@ class HomeFragmentBindingTest {
     fun shouldCalloadHomeList() = inflate<HomeFragmentBinding>(R.layout.fragment_home) {
         // GIVEN
         val mockedViewModel = mock<HomeViewModel>()
-        homeRecyclerView.adapter = HomeListAdapter(mockedViewModel)
+        homeRecyclerView.adapter = HomePageListAdapter(mockedViewModel)
         bind {
             viewState = HomeViewState()
             viewModel = mockedViewModel
@@ -38,7 +39,7 @@ class HomeFragmentBindingTest {
         refreshButton.performClick()
 
         // THEN
-        verify(mockedViewModel).loadHomeList()
+        verify(mockedViewModel).loadFactList()
     }
 
     @Test
@@ -46,11 +47,11 @@ class HomeFragmentBindingTest {
         // GIVEN
         val expectedStates = homeModelViewState()
         val expectedMessage = R.string.generic_failure_message
-        val adapter = HomeListAdapter(mock())
+        val adapter = HomePageListAdapter(mock())
         homeRecyclerView.adapter = adapter
         bind {
             viewState = HomeViewState(
-                initHomeListStates = emptyList(),
+                initHomeListStates = null,
                 initHomeListVisibility = Visibility.INVISIBLE,
                 initLoaderVisibility = false,
                 initErrorVisibility = Visibility.INVISIBLE,
@@ -62,7 +63,7 @@ class HomeFragmentBindingTest {
 
         // WHEN
         bind(viewState) {
-            homeListStates = expectedStates
+            homeListStates = null
             homeListVisibility = Visibility.GONE
             loaderVisibility = true
             errorVisibility = Visibility.GONE
@@ -72,7 +73,7 @@ class HomeFragmentBindingTest {
         }
 
         // THEN
-        assertThat(adapter.items, equalTo(expectedStates))
+        assertThat(adapter.currentList, equalTo(expectedStates))
         assertThat(homeRecyclerView.visibility, equalTo(View.GONE))
         assertThat(homeSwipeRefresh.isRefreshing, equalTo(true))
         assertThat(errorView.visibility, equalTo(View.GONE))
@@ -82,13 +83,11 @@ class HomeFragmentBindingTest {
     }
 
     private fun homeModelViewState() = listOf(
-        HomeListItemViewState(
-            homeListItem = HomeListItem(
+            fact = Fact(
                 title = "Beavers",
                 description = "Beavers are second only to humans in their ability to manipulate and change their environment. They can measure up to 1.3 metres long. A group of beavers is called a colony",
                 imageHref = "http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg"
             ),
             palette = HomeColorPalette(0xfff, 0xfff)
-        )
     )
 }

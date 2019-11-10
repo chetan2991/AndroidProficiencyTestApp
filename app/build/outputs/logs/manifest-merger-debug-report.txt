@@ -55,6 +55,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] /Users
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha02] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/ca55fa1496b825ef12f50eb95505e65c/lifecycle-livedata-ktx-2.2.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha02] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/4b286c81b606c4d01f6ce060eba84679/lifecycle-viewmodel-ktx-2.2.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0-alpha02] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/a860ff1eaf1d3e76d90234d032f3ddff/lifecycle-livedata-core-ktx-2.2.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [io.mockk:mockk-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/ec5dbf6b3b21f6d976fb29369703e519/mockk-android-1.9.3.kotlin12/AndroidManifest.xml:2:1-10:12
+MERGED from [io.mockk:mockk-agent-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/6805e9f85e42da447889491d6479b224/mockk-agent-android-1.9.3.kotlin12/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.test.espresso:espresso-core:3.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/748f470edc0045917f0c4b467ee7629a/espresso-core-3.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/9b45e4e7665140464752d125ba669f1d/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/f53d5c3bb7791df629ed0f5c1ad53bc5/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -111,6 +113,8 @@ MERGED from [androidx.core:core:1.1.0-rc01] /Users/chetanshingare/.gradle/caches
 MERGED from [androidx.core:core:1.1.0-rc01] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/1441a0cd25810bfdd99a2b01a4f70645/core-1.1.0-rc01/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/914544a1f960b55249456f8cab676a3e/versionedparcelable-1.1.0-rc01/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/914544a1f960b55249456f8cab676a3e/versionedparcelable-1.1.0-rc01/AndroidManifest.xml:24:5-25:19
+MERGED from [io.mockk:mockk-agent-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/6805e9f85e42da447889491d6479b224/mockk-agent-android-1.9.3.kotlin12/AndroidManifest.xml:10:5-20
+MERGED from [io.mockk:mockk-agent-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/6805e9f85e42da447889491d6479b224/mockk-agent-android-1.9.3.kotlin12/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/aed486eb2cfdd01d70765ea0189b1004/jetified-gifdecoder-4.8.0/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/aed486eb2cfdd01d70765ea0189b1004/jetified-gifdecoder-4.8.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.test:core:1.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/e67ed25292907d872cf75b74a11ba4ac/core-1.1.0/AndroidManifest.xml:26:5-48:19
@@ -124,19 +128,19 @@ MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/chetanshingare/.gradle/
 	android:supportsRtl
 		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:11:9-36
 	android:label
-		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
 		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:6:9-36
+		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:7:9-36
 	android:theme
-		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:12:9-40
 	android:usesCleartextTraffic
-		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:12:9-44
+		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:13:9-44
 	android:name
-		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:9:9-50
+		ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:6:9-50
 activity#com.chetan.assignments.MainActivity
 ADDED from /Users/chetanshingare/Desktop/infosys-assignment/assignment/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:14:9-20:20
 	android:name
@@ -257,6 +261,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha02] /Users/ch
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-alpha02] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/4b286c81b606c4d01f6ce060eba84679/lifecycle-viewmodel-ktx-2.2.0-alpha02/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0-alpha02] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/a860ff1eaf1d3e76d90234d032f3ddff/lifecycle-livedata-core-ktx-2.2.0-alpha02/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0-alpha02] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/a860ff1eaf1d3e76d90234d032f3ddff/lifecycle-livedata-core-ktx-2.2.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [io.mockk:mockk-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/ec5dbf6b3b21f6d976fb29369703e519/mockk-android-1.9.3.kotlin12/AndroidManifest.xml:6:5-8:41
+MERGED from [io.mockk:mockk-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/ec5dbf6b3b21f6d976fb29369703e519/mockk-android-1.9.3.kotlin12/AndroidManifest.xml:6:5-8:41
+MERGED from [io.mockk:mockk-agent-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/6805e9f85e42da447889491d6479b224/mockk-agent-android-1.9.3.kotlin12/AndroidManifest.xml:6:5-8:41
+MERGED from [io.mockk:mockk-agent-android:1.9.3.kotlin12] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/6805e9f85e42da447889491d6479b224/mockk-agent-android-1.9.3.kotlin12/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.test.espresso:espresso-core:3.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/748f470edc0045917f0c4b467ee7629a/espresso-core-3.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.test.espresso:espresso-core:3.1.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/748f470edc0045917f0c4b467ee7629a/espresso-core-3.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/chetanshingare/.gradle/caches/transforms-2/files-2.1/9b45e4e7665140464752d125ba669f1d/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44

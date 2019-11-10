@@ -16,16 +16,18 @@ import dagger.android.support.AndroidSupportInjectionModule
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [
-AndroidSupportInjectionModule::class,
-    BaseUiModule::class,
-    BaseDomainModule::class,
-    BaseDataModule::class,
-    SplashUiModule::class,
-    HomeUiModule::class,
-    HomeDomainModule::class ,
-    HomeDataModule::class
-])
+@Component(
+    modules = [
+        AndroidSupportInjectionModule::class,
+        BaseUiModule::class,
+        BaseDomainModule::class,
+        BaseDataModule::class,
+        SplashUiModule::class,
+        HomeUiModule::class,
+        HomeDomainModule::class,
+        HomeDataModule::class
+    ]
+)
 interface AppComponent : AndroidInjector<App> {
 
     @Component.Factory

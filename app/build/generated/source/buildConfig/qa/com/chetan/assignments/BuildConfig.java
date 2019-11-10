@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.chetan.assignments.qa";
   public static final String BUILD_TYPE = "qa";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 9;
-  public static final String VERSION_NAME = "untagged.9-b6b469f-dirty";
+  public static final int VERSION_CODE = 10;
+  public static final String VERSION_NAME = "untagged.10-b71795c-dirty";
 }

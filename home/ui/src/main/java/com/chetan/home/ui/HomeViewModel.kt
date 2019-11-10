@@ -53,6 +53,7 @@ class HomeViewModel @Inject constructor(
         loaderVisibility = false
         errorVisibility = Visibility.GONE
         homeListVisibility = Visibility.VISIBLE
+        homeListStates = states
         submitSubList(states)
     }
 

@@ -3,7 +3,6 @@ package com.chetan.home.data
 import androidx.annotation.MainThread
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PagedList
-import com.chetan.base.PagingRequestHelper
 import com.chetan.base.data.network.NetworkState
 import com.chetan.home.data.db.FactLocalCahe
 import com.chetan.home.data.network.HomeRemoteDataSource
@@ -44,11 +43,18 @@ class BoundaryCallback @Inject constructor(
                 networkState.postValue(NetworkState.LOADING)
                 val response = remoteDataSource.getFactList()
                 if (response.status == com.chetan.base.data.Result.Status.SUCCESS) {
-                    val result  = response.data!!.rows.filter {
-                        if(it.title==null&&it.description==null&&it.imageHref==null){false}
-                        else {true}
+                    val result = response.data!!.rows.filter {
+                        if (it.title == null && it.description == null && it.imageHref == null) {
+                            false
+                        } else {
+                            true
+                        }
                     }.map {
-                        it.copy(title = it.title?.trim(),description = it.description?.trim(), imageHref = it.imageHref?.trim())
+                        it.copy(
+                            title = it.title?.trim(),
+                            description = it.description?.trim(),
+                            imageHref = it.imageHref?.trim()
+                        )
                     }
                     cache.insert(result) {
                     }

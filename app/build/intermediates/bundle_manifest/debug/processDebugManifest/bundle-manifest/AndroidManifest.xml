@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chetan.assignments.debug"
-    android:versionCode="9"
-    android:versionName="untagged.9-b6b469f-dirty" >
+    android:versionCode="10"
+    android:versionName="untagged.10-b71795c-dirty" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.INTERNET" />
