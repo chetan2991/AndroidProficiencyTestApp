@@ -15,4 +15,7 @@ public final class BuildConfig {
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = -1;
   public static final String VERSION_NAME = "";
+  // Fields from build type: debug
+  public static final String BASE_URL = "https://dl.dropboxusercontent.com/";
+  public static final String KEY = "2iodh4vg0eortkl";
 }

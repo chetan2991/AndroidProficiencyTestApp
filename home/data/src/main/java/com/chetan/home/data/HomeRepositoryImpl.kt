@@ -19,7 +19,7 @@ import javax.inject.Inject
 
 /**
  *
- * Repository class that works with local and remote data sources of movies.
+ * Repository class that works with local and remote data sources of facts.
  *
  */
 class HomeRepositoryImpl @Inject constructor(
