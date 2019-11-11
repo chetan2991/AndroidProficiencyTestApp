@@ -34,7 +34,33 @@ subprojects {
                 }
 
                 buildTypes {
-                    qa {}
+                    qa {
+                        Properties properties = new Properties()
+                        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+                        def baseUrl = properties.getProperty("base_url")
+                        def apikey = properties.getProperty("api_key")
+                        buildConfigField 'String', "API_KEY", apikey
+                        buildConfigField 'String', "BASE_URL", baseUrl
+
+                    }
+                    debug{
+                        Properties properties = new Properties()
+                        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+                        def baseUrl = properties.getProperty("base_url")
+                        def apikey = properties.getProperty("api_key")
+                        buildConfigField 'String', "KEY", apikey
+                        buildConfigField 'String', "BASE_URL", baseUrl
+
+                    }
+                    release{
+                        Properties properties = new Properties()
+                        properties.load(project.rootProject.file("local.properties").newDataInputStream())
+                        def baseUrl = properties.getProperty("base_url")
+                        def apikey = properties.getProperty("api_key")
+                        buildConfigField 'String', "KEY", apikey
+                        buildConfigField 'String', "BASE_URL", baseUrl
+
+                    }
                 }
             }
         }
@@ -169,53 +195,25 @@ buildscript {
             ],
             pagging                       : [
                     'paggingRuntime': "androidx.paging:paging-runtime:${versions.pagingVersion}",
-                    'pagingKtx' :"androidx.paging:paging-runtime-ktx:${versions.pagingVersion}",
-                    'pagingCommon' :"androidx.paging:paging-rxjava2:${versions.pagingVersion}"
-
-//                    implementation "androidx.paging:paging-runtime:$paging_version" // For Kotlin use paging-runtime-ktx
-//
-//                    // alternatively - without Android dependencies for testing
-//                    testImplementation "androidx.paging:paging-common:$paging_version" // For Kotlin use paging-common-ktx
-//
-//                    // optional - RxJava support
-//                    implementation "androidx.paging:paging-rxjava2:$paging_version" // For Kotlin use paging-rxjava2-ktx
-
-
+                    'pagingKtx'     : "androidx.paging:paging-runtime-ktx:${versions.pagingVersion}",
+                    'pagingCommon'  : "androidx.paging:paging-rxjava2:${versions.pagingVersion}"
             ],
 
 
 
             androidTest                   : [
                     'espressoCore': "androidx.test.espresso:espresso-core:${versions.espressoCore}",
-//                    'testRunner'           : "androidx.test:runner:${versions.espressoRunner}",
-//                    'testRules'            : "androidx.test:rules:${versions.testRules}",
-//                    'annotation'           : "androidx.annotation:annotation:${versions.androidTestAnnotation}",
                     'archCore'    : "androidx.arch.core:core-testing:${versions.arch}",
-//                    'cucumberAndroid'      : "info.cukes:cucumber-android:${versions.cucumberAndroid}",
-//                    'cucumberPicoContainer': "info.cukes:cucumber-picocontainer:${versions.cucumberPicoContainer}",
-//                    'cucumberJvmDeps'      : "info.cukes:cucumber-jvm-deps:${versions.cucumberJvmDeps}",
-//                    'cucumberJavaDeps'     : "info.cukes:cucumber-java:${versions.cucumberJava}",
             ],
 
             test                          : [
                     'junit'        : "junit:junit:${versions.junit}",
                     'junitAndroid' : "androidx.test.ext:junit:${versions.junitAndroid}",
                     'robolectric'  : "org.robolectric:robolectric:${versions.robolectric}",
-//                    'core'         : "androidx.test:core:${versions.testCore}",
-//                    'mockWebServer': "com.squareup.okhttp3:mockwebserver:${versions.okhttp}",
                     'mockito'      : "com.nhaarman.mockitokotlin2:mockito-kotlin:${versions.mockitoKotlin}",
                     'fragment'     : "androidx.fragment:fragment-testing:${versions.fragmentTest}",
                     'bindingMapper': "com.github.annypatel.databinding:binding-mapper:${versions.bindingMapper}",
 
-
-//                    'mockitoInline' : "org.mockito:mockito-inline:${versions.mockito}",
-//                    'mockitoAndroid' : "org.mockito:mockito-android:${versions.mockito}",
-//                    'coroutineTest' : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutines}"
-
-//                    mokito                        : [
-//                    const val mockitoInline = "org.mockito:mockito-inline:${versions.mockito}"
-//                    const val mockitoAndroid = "org.mockito:mockito-android:${versions.mockito}"
-//                    ]
             ],
             tools                         : [
                     'timber'      : "com.jakewharton.timber:timber:${versions.timberVersion}",
@@ -223,8 +221,8 @@ buildscript {
                     'stethoOkhttp': "com.facebook.stetho:stetho:${versions.stetho}"
             ],
             glide                         : [
-                    runtime : "com.github.bumptech.glide:glide:${versions.glide}",
-                    compile : "com.github.bumptech.glide:compiler:${versions.glide}"
+                    runtime: "com.github.bumptech.glide:glide:${versions.glide}",
+                    compile: "com.github.bumptech.glide:compiler:${versions.glide}"
             ]
 
     ]
@@ -240,9 +238,7 @@ buildscript {
     dependencies {
         classpath deps.android.gradlePlugin
         classpath deps.kotlin.gradlePlugin
-//        classpath deps.plugins.googleServices
         classpath deps.gladed.androidgitversion
-//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
     }

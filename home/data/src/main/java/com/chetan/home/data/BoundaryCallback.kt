@@ -1,6 +1,5 @@
 package com.chetan.home.data
 
-import androidx.annotation.MainThread
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PagedList
 import com.chetan.base.data.network.NetworkState
@@ -11,7 +10,6 @@ import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import timber.log.Timber
-import java.util.concurrent.Executor
 import javax.inject.Inject
 
 /***

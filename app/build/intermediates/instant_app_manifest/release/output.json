@@ -1,1 +1,0 @@
-[{"outputType":{"type":"INSTANT_APP_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":10,"versionName":"untagged.10-b71795c-dirty","enabled":true,"outputFile":"app-release-unsigned.apk","fullName":"release","baseName":"release"},"path":"AndroidManifest.xml","properties":{"packageId":"com.chetan.assignments","split":"","minSdkVersion":"16"}}]

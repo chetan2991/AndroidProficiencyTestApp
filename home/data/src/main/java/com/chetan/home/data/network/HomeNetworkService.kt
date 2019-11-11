@@ -1,13 +1,15 @@
 package com.chetan.home.data.network
 
 import com.chetan.base.data.BaseDataSource
+import com.chetan.base.data.BuildConfig
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Path
 import javax.inject.Inject
 
 interface HomeNetworkService {
-    @GET("s/2iodh4vg0eortkl/facts.json/")
-    suspend fun getFactList(): Response<GetHomeListResponse>
+    @GET("s/{key}/facts.json/")
+    suspend fun getFactList(@Path("key")key:String=BuildConfig.KEY): Response<GetHomeListResponse>
 }
 
 /**

@@ -33,16 +33,8 @@ dependencies {
     implementation(deps.room.roomCompiler)
     implementation(deps.room.roomKtx)
 
-//    implementation 'io.mockk:mockk:1.9.3.kotlin12'
     implementation "io.mockk:mockk:1.9.3.kotlin12"
-//    implementation 'io.mockk:mockk-android:1.9.3.kotlin12'
     implementation "io.mockk:mockk-android:1.9.3.kotlin12"
 
 
-//    implementation(deps.rx.java)
-//    implementation(deps.rx.android)
-
-//    implementation(deps.test.rules)
-//    implementation(deps.test.rxidler)
-//    implementation(deps.test.okReplay)
 }

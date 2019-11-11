@@ -17,7 +17,6 @@ dependencies {
     implementation(deps.room.roomKtx)
 
 
-//    implementation(deps.rx.java)
     implementation(deps.dagger.daggerAndroidRuntime)
     implementation(deps.dagger.daggerRuntime)
     kapt(deps.dagger.daggerCompiler)

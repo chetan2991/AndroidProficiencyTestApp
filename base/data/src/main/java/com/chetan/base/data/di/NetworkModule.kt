@@ -1,5 +1,6 @@
 package com.chetan.base.data.di
 
+import com.chetan.base.data.BuildConfig
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
@@ -15,7 +16,7 @@ object NetworkModule {
     private const val CONNECT_TIMEOUT = 30L
     private const val READ_TIMEOUT = 30L
     private const val WRITE_TIMEOUT = 30L
-    const val BASE_URL = "https://dl.dropboxusercontent.com/"
+    const val BASE_URL = BuildConfig.BASE_URL
 
     @Provides
     @JvmStatic
