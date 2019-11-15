@@ -729,8 +729,6 @@ color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
 color soft_pink
-color splash_bg_gradient_end
-color splash_bg_gradient_start
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -968,10 +966,6 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
-dimen tag_line_bg_bottom_padding
-dimen tag_line_bg_corner_radius
-dimen tag_line_bg_lr_padding
-dimen tag_line_text_size
 dimen text_eighteen
 dimen text_fifteen
 dimen text_fifty_four
@@ -1104,8 +1098,6 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable splash_background
-drawable tag_line_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font avenir
@@ -1318,8 +1310,6 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
-id splashFragment
-id splash_nav_graph
 id split_action_bar
 id spread
 id spread_inside
@@ -1436,7 +1426,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_home
-layout fragment_splash
 layout item_list_home
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1454,7 +1443,6 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation app
 navigation home
-navigation splash
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1901,9 +1889,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style Widget_App_AppBarLayout
 style Widget_App_AppLogo
-style Widget_App_AppLogo_Splash
 style Widget_App_CardView
-style Widget_App_TagLine
 style Widget_App_Toolbar
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid

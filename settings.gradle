@@ -1,5 +1,4 @@
 include ':app'
-include ':splash:ui'
 include ':home:domain'
 include ':home:data'
 include ':home:ui'

@@ -4,7 +4,6 @@ ADDED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidM
 INJECTED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml:2:1-23:12
-MERGED from [:splash:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/splash/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:home:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/home/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [:test:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/test/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:base:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/base/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -159,8 +158,6 @@ uses-sdk
 INJECTED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml
 INJECTED from /Users/chetan/Desktop/AndroidProficiencyTestApp/app/src/main/AndroidManifest.xml
-MERGED from [:splash:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/splash/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:splash:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/splash/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:home:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/home/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:home:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/home/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:test:ui] /Users/chetan/Desktop/AndroidProficiencyTestApp/test/ui/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41

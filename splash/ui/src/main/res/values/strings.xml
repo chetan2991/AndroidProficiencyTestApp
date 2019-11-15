@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">ui</string>
-    //move to base
-    <string name="app_tag_line"> Welcome </string>
-
-</resources>
