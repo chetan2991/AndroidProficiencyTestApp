@@ -1,5 +1,5 @@
 # About
-In every module I have divide layers in three parts ( data, domain and ui ) we tried here to build
+In every module I have divide layers in three parts ( data, domain and ui ) I tried here to build
 reusable modules of each layer.
 
 # test
