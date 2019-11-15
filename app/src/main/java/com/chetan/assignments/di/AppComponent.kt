@@ -8,7 +8,6 @@ import com.chetan.base.ui.di.BaseUiModule
 import com.chetan.home.data.di.HomeDataModule
 import com.chetan.home.domain.di.HomeDomainModule
 import com.chetan.home.ui.di.HomeUiModule
-import com.chetan.splash.ui.di.SplashUiModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -22,7 +21,6 @@ import javax.inject.Singleton
         BaseUiModule::class,
         BaseDomainModule::class,
         BaseDataModule::class,
-        SplashUiModule::class,
         HomeUiModule::class,
         HomeDomainModule::class,
         HomeDataModule::class

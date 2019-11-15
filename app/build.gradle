@@ -83,7 +83,6 @@ dependencies {
     implementation(deps.ui.fragment)
     implementation(deps.ui.navigation)
 
-    implementation project(':splash:ui')
     implementation project(':home:ui')
     implementation project(':home:domain')
     implementation project(':home:data')
