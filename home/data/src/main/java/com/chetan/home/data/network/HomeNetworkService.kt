@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 interface HomeNetworkService {
     @GET("s/{key}/facts.json/")
-    suspend fun getFactList(@Path("key")key:String=BuildConfig.KEY): Response<GetHomeListResponse>
+    suspend fun getFactList(@Path("key")key:String=BuildConfig.API_KEY): Response<GetHomeListResponse>
 }
 
 /**

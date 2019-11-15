@@ -9,7 +9,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
-
 class SplashFragment : DaggerFragment() {
 
     @Inject

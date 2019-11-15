@@ -48,7 +48,7 @@ subprojects {
                         properties.load(project.rootProject.file("local.properties").newDataInputStream())
                         def baseUrl = properties.getProperty("base_url")
                         def apikey = properties.getProperty("api_key")
-                        buildConfigField 'String', "KEY", apikey
+                        buildConfigField 'String', "API_KEY", apikey
                         buildConfigField 'String', "BASE_URL", baseUrl
 
                     }
@@ -57,9 +57,8 @@ subprojects {
                         properties.load(project.rootProject.file("local.properties").newDataInputStream())
                         def baseUrl = properties.getProperty("base_url")
                         def apikey = properties.getProperty("api_key")
-                        buildConfigField 'String', "KEY", apikey
+                        buildConfigField 'String', "API_KEY", apikey
                         buildConfigField 'String', "BASE_URL", baseUrl
-
                     }
                 }
             }

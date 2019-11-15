@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/app_nav_graph"
-    app:startDestination="@id/splash_nav_graph"
+    app:startDestination="@id/home_nav_graph"
     tools:ignore="InvalidNavigation,UnusedNavigation">
 
     <include app:graph="@navigation/splash" />

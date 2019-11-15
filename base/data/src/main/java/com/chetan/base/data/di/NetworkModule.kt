@@ -1,6 +1,6 @@
 package com.chetan.base.data.di
 
-import com.chetan.base.data.BuildConfig
+import com.chetan.base.domain.BuildConfig
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
