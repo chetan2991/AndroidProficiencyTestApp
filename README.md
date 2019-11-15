@@ -6,7 +6,7 @@ reusable modules of each layer.
 module which is providing common testing utilities.
 
 #home
- module which is providing main functionality of appliction.
+ module which is providing home-list  of app.
 
 #app
  this is main project module in which we can add other modules.

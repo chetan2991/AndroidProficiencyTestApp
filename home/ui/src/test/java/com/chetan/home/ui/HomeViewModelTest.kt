@@ -3,13 +3,13 @@ package com.chetan.home.ui
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PagedList
-import com.android.example.livedatabuilder.util.observeForTesting
 import com.chetan.base.data.network.NetworkState
 import com.chetan.base.ui.Visibility
 import com.chetan.home.domain.GetFacts
 import com.chetan.home.domain.LiveDataHomeResult
 import com.chetan.home.domain.model.Fact
 import com.chetan.test.ui.asPagedList
+import com.chetan.test.ui.observeForTesting
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
@@ -87,33 +87,33 @@ class HomeViewModelTest {
 //        assertThat(viewModel.viewState.errorMessage, equalTo(Message(R.string.no_story_message)))
 //    }
 
-//    @Test
-//    fun shouldShowErrorState_whenGetHomeListReturnsError() {
-//        // GIVEN
-//        givenNetworkStateFailGetFacts()
-//        val viewModel = HomeViewModel(mockedGetFacts, mockedPalettes)
-//
-//        // WHEN
-//        viewModel.loadFactList()
-//        viewModel.liveDataFactList.observeForTesting {
-//            assertEquals(viewModel.liveDataFactList.value, null)
-//        }
-//        viewModel.netWorkState.observeForTesting {
-//            assertEquals(viewModel.netWorkState.value,NetworkState.error("FAiled"))
-//        }
-//        viewModel.title.observeForTesting {
-//            assertEquals(viewModel.title.value, null)
-//        }
-//        viewModel.refreshState.observeForTesting {
-//            assertEquals(viewModel.refreshState.value,null)
-//        }
-//
-//        // THEN
-//        assertThat(viewModel.viewState.loaderVisibility, equalTo(false))
-//        assertThat(viewModel.viewState.errorVisibility, equalTo(Visibility.GONE))
-//        assertThat(viewModel.viewState.homeListVisibility, equalTo(Visibility.VISIBLE))
-//        assertThat(viewModel.viewState.homeListStates, equalTo(listOf(Fact.EMPTY).asPagedList()))
-//    }
+    @Test
+    fun shouldShowErrorState_whenGetHomeListReturnsError() {
+        // GIVEN
+        givenNetworkStateFailGetFacts()
+        val viewModel = HomeViewModel(mockedGetFacts, mockedPalettes)
+
+        // WHEN
+        viewModel.loadFactList()
+        viewModel.liveDataFactList.observeForTesting {
+            assertEquals(viewModel.liveDataFactList.value, null)
+        }
+        viewModel.netWorkState.observeForTesting {
+            assertEquals(viewModel.netWorkState.value,NetworkState.error("FAiled"))
+        }
+        viewModel.title.observeForTesting {
+            assertEquals(viewModel.title.value, null)
+        }
+        viewModel.refreshState.observeForTesting {
+            assertEquals(viewModel.refreshState.value,null)
+        }
+
+        // THEN
+        assertThat(viewModel.viewState.loaderVisibility, equalTo(false))
+        assertThat(viewModel.viewState.errorVisibility, equalTo(Visibility.GONE))
+        assertThat(viewModel.viewState.homeListVisibility, equalTo(Visibility.VISIBLE))
+        assertThat(viewModel.viewState.homeListStates, equalTo(listOf(Fact.EMPTY).asPagedList()))
+    }
 
 
 
