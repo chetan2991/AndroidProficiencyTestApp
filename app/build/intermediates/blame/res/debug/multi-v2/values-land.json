@@ -4,7 +4,17 @@
             "outputFile": "/Users/chetan/Desktop/AndroidProficiencyTestApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/ead2b9cc5577521b275ccb3c45d36677/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/3104f7a7d67c51c6cbad40e3ccf37e0e/appcompat-1.0.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/6a4ce950fdee10b9759b68b101bcdbea/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/f4f9a9bfe5bdec6402028ed633cef68d/appcompat-1.0.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

@@ -72,7 +72,7 @@ dependencies {
     //testing
     testImplementation project(':test:ui')
     testImplementation(deps.test.junit)
-    testImplementation(deps.test.junitAndroid)
+    testImplementation(deps.androidTest.junitAndroid)
     testImplementation(deps.test.mockito)
     testImplementation(deps.androidTest.archCore)
     testImplementation(deps.androidTest.espressoCore)

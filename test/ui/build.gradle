@@ -22,19 +22,32 @@ dependencies {
     implementation(deps.ui.navigation)
     implementation(deps.ui.material)
 
+    //network
+    implementation(deps.network.okhttp)
 
     //test
     implementation(deps.test.mockito)
     implementation(deps.androidTest.archCore)
-    implementation(deps.test.fragment)
+    implementation(deps.androidTest.fragment)
     implementation(deps.androidTest.espressoCore)
 
 
     implementation(deps.room.roomCompiler)
     implementation(deps.room.roomKtx)
 
+    //it is for pagedlist
     implementation "io.mockk:mockk:1.9.3.kotlin12"
     implementation "io.mockk:mockk-android:1.9.3.kotlin12"
+
+
+
+    implementation(deps.androidTest.mockitoAndroid)
+    implementation(deps.test.mockito)
+    implementation(deps.androidTest.core)
+
+    implementation(deps.androidTest.rules)
+    implementation(deps.androidTest.okReplay)
+
 
 
 }

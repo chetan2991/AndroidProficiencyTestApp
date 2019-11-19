@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chetan.assignments.debug"
     android:targetSandboxVersion="2"
-    android:versionCode="19"
-    android:versionName="untagged.19-12533c1-dirty" >
+    android:versionCode="20"
+    android:versionName="untagged.20-d24c12e-dirty" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -21,7 +21,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.chetan.assignments.MainActivity" >

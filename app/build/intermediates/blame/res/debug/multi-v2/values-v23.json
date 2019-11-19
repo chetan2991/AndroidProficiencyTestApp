@@ -4,7 +4,7 @@
             "outputFile": "/Users/chetan/Desktop/AndroidProficiencyTestApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/2f1437cf0e2c1a84a63c90d296197899/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/f617899cdbcd10c33d11b39eeb80f608/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/f4f9a9bfe5bdec6402028ed633cef68d/appcompat-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/Users/chetan/.gradle/caches/transforms-2/files-2.1/3104f7a7d67c51c6cbad40e3ccf37e0e/appcompat-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

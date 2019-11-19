@@ -14,3 +14,8 @@ module which is providing common testing utilities.
 
 # AndroidProficiencyTestApplication
 # To Run tests  use run_all_tests.sh script
+
+
+#'okreplay' task
+#clearOkReplayTapes - Clear OkReplay tapes from the Device SD Card
+#pullOkReplayTapes - Pull OkReplay tapes from the Device SD Card

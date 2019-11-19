@@ -39,12 +39,12 @@ object NetworkModule {
             .connectTimeout(CONNECT_TIMEOUT, TimeUnit.SECONDS)
             .readTimeout(READ_TIMEOUT, TimeUnit.SECONDS)
             .writeTimeout(WRITE_TIMEOUT, TimeUnit.SECONDS)
-            .addInterceptor(logger)
             .apply {
                 interceptors.forEach { addInterceptor(it) }
             }
             .build()
     }
+
 
     @Provides
     @JvmStatic
@@ -54,5 +54,8 @@ object NetworkModule {
             this
         }
     }
+
+
+
 }
 

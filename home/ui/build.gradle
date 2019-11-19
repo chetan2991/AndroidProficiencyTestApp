@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'okreplay'
+
 
 //A gradle plugin to calculate Android-friendly version names and codes from git tags.
 apply plugin: 'com.gladed.androidgitversion'
@@ -24,6 +26,8 @@ android {
                 includeCompileClasspath false
             }
         }
+        vectorDrawables.useSupportLibrary = true
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -48,9 +52,11 @@ android {
     }
     testOptions {
         testOptions.unitTests.includeAndroidResources = true
+        animationsDisabled = true
     }
 
 }
+
 
 dependencies {
 
@@ -59,34 +65,23 @@ dependencies {
     //ToDO:need to remove data layer
     implementation project(':base:data')
 
-    
     implementation project(':base:domain')
     implementation project(':home:domain')
-
-
     implementation(deps.kotlin.kotlinstdlib)
-
-
     //dagger
     implementation(deps.dagger.daggerRuntime)
     implementation(deps.dagger.daggerAndroidRuntime)
     kapt(deps.dagger.daggerProcessor)
     kapt(deps.dagger.daggerCompiler)
-
-
     //ui
     implementation(deps.ui.appcompact)
     implementation(deps.ui.fragment)
     implementation(deps.ui.navigation)
     implementation(deps.ui.material)
     implementation(deps.ui.constraintlayout)
-
-
     //live data
     implementation(deps.lifeCycleArchitectureComponent.livedataKtx)
     implementation(deps.pagging.paggingRuntime)
-
-
     //coroutine
     implementation(deps.coroutine.coroutineCore)
     implementation(deps.coroutine.coroutineAndroid)
@@ -95,12 +90,91 @@ dependencies {
     implementation project(':test:ui')
 
     testImplementation(deps.test.junit)
-    testImplementation(deps.test.junitAndroid)
+    testImplementation(deps.androidTest.junitAndroid)
     testImplementation(deps.test.mockito)
+
     testImplementation(deps.test.robolectric)
     testImplementation(deps.test.bindingMapper)
     testImplementation(deps.androidTest.archCore)
     testImplementation(deps.androidTest.espressoCore)
+
+    androidTestImplementation(deps.androidTest.fragment)
+    androidTestImplementation project(':home:data')
+    androidTestImplementation(deps.androidTest.okReplay)
+    androidTestImplementation(deps.androidTest.mockitoAndroid)
+    androidTestImplementation(deps.test.mockito)
+    androidTestImplementation(deps.androidTest.rules)
+    androidTestImplementation(deps.androidTest.runner)
+    androidTestImplementation(deps.androidTest.runner)
+    androidTestImplementation(deps.androidTest.core)
+    androidTestImplementation(deps.androidTest.espressoCore)
+
+
+    androidTestImplementation project(':test:ui')
+    androidTestImplementation project(':base:data')
+    androidTestImplementation project(':home:data')
+    kaptAndroidTest(deps.dagger.daggerRuntime)
+    kaptAndroidTest(deps.dagger.daggerAndroidRuntime)
+
+
+//    androidTestImplementation(deps.test.runner)
+//    androidTestImplementation(deps.test.rules)
+//    androidTestImplementation(deps.test.mockito)
+//    androidTestImplementation(deps.test.mockitoAndroid)
+//    androidTestImplementation(deps.test.espresso)
+//    androidTestImplementation(deps.test.fragment)
+//    androidTestImplementation(deps.test.okReplay)
+//    kaptAndroidTest(deps.dagger.compiler)
+//    kaptAndroidTest(deps.dagger.androidCompiler)
+//    // required for dagger generated code
+//    androidTestImplementation(deps.retrofit.client)
+
+
+//    implementation(project(":base:ui"))
+//    implementation(project(":base:domain"))
+//    implementation(project(":story:domain"))
+//    implementation(deps.kotlin.stdlib)
+//    implementation(deps.rx.java)
+//    implementation(deps.rx.kotlin)
+//    implementation(deps.dagger.runtime)
+//    implementation(deps.dagger.androidRuntime)
+//    kapt(deps.dagger.compiler)
+//    kapt(deps.dagger.androidCompiler)
+//    implementation(deps.androidx.appCompat)
+//    implementation(deps.androidx.fragment)
+//    implementation(deps.androidx.viewModel)
+//    implementation(deps.androidx.constraintLayout)
+//    implementation(deps.design.material)
+//    implementation(deps.androidx.navigation)
+//
+//    testImplementation(project(":test:ui"))
+//    testImplementation(project(":test:data"))
+//    testImplementation(project(":test:domain"))
+//    testImplementation(deps.test.junit)
+//    testImplementation(deps.test.junitAndroid)
+//    testImplementation(deps.test.mockito)
+//    testImplementation(deps.test.mockitoInline)
+//    testImplementation(deps.test.espresso)
+//    testImplementation(deps.test.robolectric)
+//    testImplementation(deps.test.bindingMapper)
+//    testImplementation(deps.test.archCore)
+//
+//    androidTestImplementation(project(":test:ui"))
+//    androidTestImplementation(project(":test:data"))
+//    androidTestImplementation(project(":test:domain"))
+//    androidTestImplementation(project(":base:data"))
+//    androidTestImplementation(project(":story:data"))
+//    androidTestImplementation(deps.test.runner)
+//    androidTestImplementation(deps.test.rules)
+//    androidTestImplementation(deps.test.mockito)
+//    androidTestImplementation(deps.test.mockitoAndroid)
+//    androidTestImplementation(deps.test.espresso)
+//    androidTestImplementation(deps.test.fragment)
+//    androidTestImplementation(deps.test.okReplay)
+//    kaptAndroidTest(deps.dagger.compiler)
+//    kaptAndroidTest(deps.dagger.androidCompiler)
+//    // required for dagger generated code
+//    androidTestImplementation(deps.retrofit.client)
 
 
 }
